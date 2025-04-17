@@ -1,0 +1,27 @@
+{
+  "name": "password-generator-frontend",
+  "version": "1.0.0",
+  "description": "Frontend tests for password generator",
+  "main": "static/js/main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleDirectories": ["node_modules", "src"],
+    "setupFilesAfterEnv": ["<rootDir>/tests/setupTests.js"],
+    "testMatch": [
+      "**/static/js/**/*.test.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^8.16.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3"
+  }
+}
